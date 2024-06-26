@@ -35,8 +35,6 @@ jobs:
 
       - name: Install dependencies
         run: REACT_APP_ENV=${{ env.REACT_APP_ENV }} npm ci
-      - name:
-        run: rsync --version
 
       - name: Build
         run: REACT_APP_ENV=${{ env.REACT_APP_ENV }} npm run build
